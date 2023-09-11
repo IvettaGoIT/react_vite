@@ -3,6 +3,8 @@ name: Build and deploy to GitHub Pages
 on:
   push:
     branches: [main]
+env:
+  REACT_APP_TEST: ${{secrets.REACT_APP_TEST}}
 
 jobs:
   build-and-deploy:
