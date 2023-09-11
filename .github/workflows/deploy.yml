@@ -28,7 +28,7 @@ jobs:
         run: cp ./dist/index.html ./dist/404.html
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2.3.1
         with:
           name: production-files
           path: ./dist
@@ -49,6 +49,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          publish_dir: ./dist
+          folder: build
