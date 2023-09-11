@@ -52,4 +52,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           publish_dir: ./dist
-          folder: build
