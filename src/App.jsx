@@ -6,6 +6,7 @@ import HalfPage from './pages/HalfPage/HalfPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 function App() {
+  //test
   return (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
