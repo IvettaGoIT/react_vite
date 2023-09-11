@@ -5,51 +5,21 @@ on:
     branches: [main]
 
 jobs:
-  build:
-    name: Build
+    build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
+      - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
+      - name: Install, lint, build 🔧
+        run: |
+          npm install
+          npm run lint:js
+          npm run build
+          cp ./dist/index.html ./dist/404.html
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-
-      - name: Build project
-        run: npm run build
-
-      - name: Copy index.html to 404.html
-        run: cp ./dist/index.html ./dist/404.html
-
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2.3.1
-        with:
-          name: production-files
-          path: ./dist
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          publish_dir: ./dist
-          folder: production-files
+          folder: build
