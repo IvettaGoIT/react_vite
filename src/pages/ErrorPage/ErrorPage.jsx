@@ -1,8 +1,10 @@
+import { Container, Title } from './ErrorPage.styled';
+
 const ErrorPage = () => {
   return (
-    <div>
-      <h2>4</h2>0<h2>4</h2>
-    </div>
+    <Container>
+      <Title>404</Title>
+    </Container>
   );
 };
 
