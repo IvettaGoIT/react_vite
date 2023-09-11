@@ -48,7 +48,8 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
           publish_dir: ./dist
