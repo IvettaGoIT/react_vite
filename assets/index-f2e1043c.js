@@ -162,4 +162,4 @@ Error generating stack: `+o.message+`
     0 0 20px #00baff,
     0 0 40px #00baff,
     0 0 80px #00baff;
-`,wg=()=>j.jsx(gg,{children:j.jsx(yg,{children:"404"})}),Sg={}.VITE_API_TEST;function kg(){return console.log(Sg),j.jsx(Kh,{children:j.jsxs(wn,{path:"/",element:j.jsx(pv,{}),children:[j.jsx(wn,{path:"/first",element:j.jsx(sg,{})}),j.jsx(wn,{path:"/second",element:j.jsx(hg,{}),children:j.jsx(wn,{path:":half",element:j.jsx(vg,{})})}),j.jsx(wn,{path:"*",element:j.jsx(wg,{})})]})})}Ml.createRoot(document.getElementById("root")).render(j.jsx(sn.StrictMode,{children:j.jsx(qh,{basename:"/react_vite",children:j.jsx(kg,{})})}));
+`,wg=()=>j.jsx(gg,{children:j.jsx(yg,{children:"404"})}),Sg="Hello,world";function kg(){return console.log(Sg),j.jsx(Kh,{children:j.jsxs(wn,{path:"/",element:j.jsx(pv,{}),children:[j.jsx(wn,{path:"/first",element:j.jsx(sg,{})}),j.jsx(wn,{path:"/second",element:j.jsx(hg,{}),children:j.jsx(wn,{path:":half",element:j.jsx(vg,{})})}),j.jsx(wn,{path:"*",element:j.jsx(wg,{})})]})})}Ml.createRoot(document.getElementById("root")).render(j.jsx(sn.StrictMode,{children:j.jsx(qh,{basename:"/react_vite",children:j.jsx(kg,{})})}));
