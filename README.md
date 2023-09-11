@@ -10,25 +10,25 @@
 репозиторію свого проєкту. Для цього натисни на кнопку `"Use this template"` і
 обери опцію `"Create a new repository"`, як показано на зображенні.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+![Creating repo from a template step 1](./src/assets/template-step-1.png)
 
 На наступному кроці відкриється сторінка створення нового репозиторію. Заповни
 поле його імені, переконайся що репозиторій публічний, після чого натисни кнопку
 `"Create repository from template"`.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+![Creating repo from a template step 2](./src/assets/template-step-2.png)
 
 Після того як репозиторій буде створено, необхідно перейти в налаштування
 створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
 на зображенні.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+![Settings GitHub Actions permissions step 1](./src/assets/gh-actions-perm-1.png)
 
 Проскроливши сторінку до самого кінця, у секції `"Workflow permissions"` вибери
 опцію `"Read and write permissions"` і постав галочку в чекбоксі. Це необхідно
 для автоматизації процесу деплою проєкту.
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+![Settings GitHub Actions permissions step 2](./src/assets/gh-actions-perm-2.png)
 
 Тепер у тебе є особистий репозиторій проєкту, зі структурою файлів і папок
 репозиторія-шаблону. Далі працюй з ним як з будь-яким іншим особистим
@@ -55,7 +55,7 @@
 виставити роздачу продакшн версії файлів із папки `/root` гілки `gh-pages`, якщо
 це не було зроблено автоматично.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+![GitHub Pages settings](./src/assets/repo-settings.png)
 
 ### Статус деплоя
 
@@ -68,14 +68,14 @@
 Детальнішу інформацію про статус можна подивитися, клікнувши на іконку, і в
 випадаючому вікні перейти за посиланням `Details`.
 
-![Deployment status](./assets/deploy-status.png)
+![Deployment status](./src/assets/deploy-status.png)
 
 ### Жива сторінка
 
 Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися за
 адресою, вказаною в налаштуваннях GitHub-репозиторію (`Settings` > `Pages`).
 
-![GitHub-pages URL](./assets/gh-pages-url.png)
+![GitHub-pages URL](./src/assets/gh-pages-url.png)
 
 Якщо відкривається порожня сторінка, переконайся що у вкладці `Console` немає
 помилок пов'язаних із неправильними шляхами до CSS і JS файлів проекту
