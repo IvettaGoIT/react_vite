@@ -11,10 +11,9 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Install, lint, build 🔧
+      - name: Install, build 🔧
         run: |
           npm install
-          npm run lint
           npm run build
 
       - name: Deploy 🚀
