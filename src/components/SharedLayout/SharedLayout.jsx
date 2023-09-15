@@ -5,7 +5,7 @@ import { Header } from 'components/Header/Header';
 const SharedLayout = () => {
   return (
     <>
-      <Header isOrange={true} />
+      <Header />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>

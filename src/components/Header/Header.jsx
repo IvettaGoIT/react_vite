@@ -1,7 +1,6 @@
 import { HeaderContainer, Navigation, StyledLink } from './Header.styled';
 
-export const Header = ({ isOrange }) => {
-  console.log('isOrange', isOrange);
+export const Header = () => {
   return (
     <HeaderContainer>
       <Navigation>
