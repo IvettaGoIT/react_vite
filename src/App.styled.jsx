@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import example from './assets/Background.png';
+import example from './assets/background.png';
 
 export const AppWrapper = styled.div`
   width: 100%;
