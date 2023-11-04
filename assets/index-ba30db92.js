@@ -180,7 +180,7 @@ Error generating stack: `+o.message+`
     0 0 20px #00baff,
     0 0 40px #00baff,
     0 0 80px #00baff;
-`,Eg=()=>z.jsx(xg,{children:z.jsx(kg,{children:"404"})}),Cg="/react_vite/assets/background-cb6f1b2b.png",Pg=Me.div`
+`,Eg=()=>z.jsx(xg,{children:z.jsx(kg,{children:"404"})}),Cg="/react_vite/assets/background-cb6f1b2b.png";const Pg=Me.div`
   width: 100%;
   height: 100vh;
   background-image: url(${Cg});
