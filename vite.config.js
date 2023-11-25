@@ -8,6 +8,8 @@ export default defineConfig({
     alias: {
       src: '/src',
       components: '/src/components',
+      pages: '/src/pages',
+      assets: '/src/assets'
     },
   },
   base: '/react_vite/',
