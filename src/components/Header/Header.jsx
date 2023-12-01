@@ -7,6 +7,7 @@ import {
 import sprite from 'assets/sprite.svg';
 
 export const Header = () => {
+  console.log('ffdf');
   return (
     <HeaderContainer>
       <Navigation>
